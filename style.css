@@ -26,11 +26,13 @@ header{
   padding: 0;
   padding-bottom: 0;
   margin: 0;
+
 }
 .slideshow {
   position: relative;
   padding: 0;
-  background-color: #555;
+  background-color: white;
+  padding: 0px;
 }
 .back {
   cursor: pointer; 
@@ -98,9 +100,7 @@ button:hover {
   transition: var(--std);
 }
 
-.dot:hover {
-  background-color:#03d903;
-}
+
 
 .dot:first-child {
   margin-left: 0;

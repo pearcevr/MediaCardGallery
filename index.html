@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body>
+<body onload = "wait()">
     <header>
         <nav>
            
@@ -29,20 +29,21 @@
             </ul>
             </nav>
             <section class="slideshow">
-                <img src="https://picsum.photos/id/29/1920/620">
-                <button class="back">&#10094;</button>
-                <button class="next">&#10095;</button>
+                <img id= "slide" src="">
+                <button id= "back" ><a class="back">&#10094;</a></button>
+                <button id = "next"> <a class="next">&#10095;</a></button>
                 <div class="dot-wrap">
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
+                  <div id = "dot1" class="dot"></div>
+                  <div id = "dot2" class="dot"></div>
+                  <div id = "dot3" class="dot"></div>
+                  <div id = "dot4" class="dot"></div>
                 </div>
               </section>
         
     </header>
         <div class="cards">
-            <div class="card-1">
+           
+           <div class="card-1">
                 <img src="https://picsum.photos/id/10/365/200">
                 <div class = "text">  
                     <div class="main-text"> 
@@ -66,9 +67,12 @@
                         <span class="material-symbols-outlined">
                             favorite
                         </span>
-                        <span class="material-symbols-outlined">
-                            expand_more
-                        </span>
+                        <button id = "modal1">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </button> 
+                        
                     </div>
                 </div>  </div>   
             </div>
@@ -406,6 +410,6 @@
         <footer>
             <p>&copy; 2023 Rose Pearce</p>
         </footer>
-   
+    <script src="function.js"></script>
 </body>
 </html>

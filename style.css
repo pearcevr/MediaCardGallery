@@ -295,9 +295,6 @@ h1{
 span .close {
   display: none;
 }
-.close:hover{
-  display:none;
-}
 .close {
   position: absolute;
   top: .5rem;

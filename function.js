@@ -54,3 +54,24 @@ function showSlides() {
      }
 }
 
+//modal
+document.querySelectorAll('.open-modal').forEach(openBtn => {
+    openBtn.addEventListener('click', event => {
+      let cardContent = event.target.previousElementSibling;
+      let modalContent = document.getElementById('modal-wrap');
+      modalContent.appendChild(cardContent.cloneNode(true));
+      modalContent.classList.add('show');
+    })
+  });
+  document.getElementById('modal-wrap').addEventListener('click', event => {
+    let modalContent = document.getElementById('modal-wrap');
+    let cardContent = modalContent.firstElementChild;
+    if (modalContent.className === 'show') {
+      modalContent.innerHTML = '';
+      modalContent.classList.remove('show');
+      event.preventDefault();
+      console.log(cardContent);
+      return false;
+    }
+  });
+
